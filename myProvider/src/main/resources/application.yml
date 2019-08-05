@@ -1,0 +1,11 @@
+dubbo:
+  registry:
+    protocol: zookeeper
+    address: 192.168.188.139:2181,192.168.188.139:2182,192.168.188.139:2183
+  protocol:
+    port: 20881
+  application:
+    name: demo_provider
+    qos-enable: false
+  scan:
+    basePackages: com.offcn.service.impl
