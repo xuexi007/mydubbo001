@@ -5,6 +5,9 @@ import com.offcn.service.HelloService;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * 新增注释！！！！！
+ */
 @RestController
 public class HelloController {
 
@@ -25,4 +28,5 @@ public class HelloController {
     public void hello3(String address){
         helloService.addMethod2(address);
     }
+
 }
