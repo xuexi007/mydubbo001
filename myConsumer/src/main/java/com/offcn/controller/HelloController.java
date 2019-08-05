@@ -15,4 +15,14 @@ public class HelloController {
     public String hello(String name){
         return helloService.sayHello(name);
     }
+
+    @RequestMapping("/hello2")
+    public void hello2(Integer age){
+        helloService.addMethod1(age);
+    }
+
+    @RequestMapping("/hello3")
+    public void hello3(String address){
+        helloService.addMethod2(address);
+    }
 }
