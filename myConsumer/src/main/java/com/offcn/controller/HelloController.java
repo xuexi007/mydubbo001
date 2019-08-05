@@ -26,11 +26,10 @@ public class HelloController {
 
     @RequestMapping("/hello3")
     public void hello3(String address){
-        //小张新增循环调用100次代码
-        for (int i = 0; i < 100; i++) {
+        //小李、小张协商后循环调用方法，执行500次
+        for (int i = 0; i <500 ; i++) {
             helloService.addMethod2(address);
         }
 
-    }
 
 }
