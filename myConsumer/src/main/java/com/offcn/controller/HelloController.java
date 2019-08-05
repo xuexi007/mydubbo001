@@ -26,7 +26,11 @@ public class HelloController {
 
     @RequestMapping("/hello3")
     public void hello3(String address){
-        helloService.addMethod2(address);
+        //小李循环调用方法，执行999次
+        for (int i = 0; i <999 ; i++) {
+            helloService.addMethod2(address);
+        }
+
     }
 
 }
