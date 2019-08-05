@@ -15,21 +15,22 @@ public class HelloController {
     private HelloService helloService;
 
     @RequestMapping("/hello")
-    public String hello(String name){
+    public String hello(String name) {
         return helloService.sayHello(name);
     }
 
     @RequestMapping("/hello2")
-    public void hello2(Integer age){
+    public void hello2(Integer age) {
         helloService.addMethod1(age);
     }
 
     @RequestMapping("/hello3")
-    public void hello3(String address){
+    public void hello3(String address) {
         //小李、小张协商后循环调用方法，执行500次
-        for (int i = 0; i <500 ; i++) {
+        for (int i = 0; i < 500; i++) {
             helloService.addMethod2(address);
         }
 
 
+    }
 }
